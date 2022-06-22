@@ -1,0 +1,28 @@
+
+
+
+.header-page{
+    width: 100%;
+    background-color: $color1;
+    color:#fff;
+    padding: 10px 30px;
+    display: flex;
+    box-sizing: border-box;
+
+    .logo{
+        font-family: 'Sacramento', cursive;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+
+.footer-page{
+    background-color: #DEB6AB;
+    width: 100%;
+    color:#fff;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}

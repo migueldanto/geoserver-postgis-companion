@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sacramento&display=swap');
+
+html,body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+$color1: #219F94;
+$color2: #C1DEAE;
+
+:root{
+    --body-bg-color: #{$color1};
+    --body-color: #404040;
+  
+    &[data-theme='auto']{
+      @media (prefers-color-scheme: dark){
+        --body-bg-color: #141414;
+        --body-color: #fafafa;
+      }
+    }
+    
+    &[data-theme='dark']{
+      --body-bg-color: #141414;
+      --body-color: #fafafa;
+    }
+    
+  }
+  

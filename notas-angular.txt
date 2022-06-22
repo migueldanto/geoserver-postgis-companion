@@ -1,0 +1,3 @@
+#Asi se estan agregando los componentes
+ng generate component views/login
+ng generate component views/guia-estilo

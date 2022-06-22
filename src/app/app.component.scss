@@ -22,7 +22,11 @@
     width: 100%;
     color: var(--accent-color);
     padding: 10px 30px;
-    position: absolute;
+    //position: fixed;
     bottom: 0;
     box-sizing: border-box;
+}
+
+:host{
+    padding-bottom: 2em;
 }

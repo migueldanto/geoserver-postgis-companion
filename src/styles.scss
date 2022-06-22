@@ -5,25 +5,55 @@ html,body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    background-color: var(--body-bg-color);
 }
 
+//paleta de colores https://colorhunt.co/palette/219f94c1deaef2f5c8e8e8a6
 $color1: #219F94;
 $color2: #C1DEAE;
+$color3: #F2F5C8;
+$color4: #E8E8A6;
+
+//textos
+$color1-text: #fff;
+$color2-text: #404040;
+$color3-text: #404040;
+
+
+//paleta de colores oscuro
+//
+$colora: #040303;
+$colorb: #461111;
+$colorc: #A13333;
+$colord: #B3541E;
+
+//textos
+$colora-text: #fff;
+$colorb-text: #fff;
+$colorc-text: #fff;
+$colord-text: #fff;
+
 
 :root{
-    --body-bg-color: #{$color1};
-    --body-color: #404040;
+    --body-bg-color: #{$color3};
+    --body-color:  #{$color3-text};
+    --accent-bg-color: #{$color1};
+    --accent-color: #{$color1-text};
   
     &[data-theme='auto']{
       @media (prefers-color-scheme: dark){
-        --body-bg-color: #141414;
-        --body-color: #fafafa;
+        --body-bg-color: #{$colorb};
+        --body-color: #{$colorb-text};
+        --accent-bg-color: #{$colord};
+        --accent-color: #{$colord-text};
       }
     }
     
     &[data-theme='dark']{
-      --body-bg-color: #141414;
-      --body-color: #fafafa;
+        --body-bg-color: #{$colorb};
+        --body-color: #{$colorb-text};
+        --accent-bg-color: #{$colord};
+        --accent-color: #{$colord-text};
     }
     
   }

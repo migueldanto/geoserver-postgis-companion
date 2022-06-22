@@ -3,8 +3,8 @@
 
 .header-page{
     width: 100%;
-    background-color: $color1;
-    color:#fff;
+    background-color: var( --accent-bg-color);
+    color: var(--accent-color);
     padding: 10px 30px;
     display: flex;
     box-sizing: border-box;
@@ -18,9 +18,9 @@
 
 
 .footer-page{
-    background-color: #DEB6AB;
+    background-color: var( --accent-bg-color);
     width: 100%;
-    color:#fff;
+    color: var(--accent-color);
     padding: 10px 30px;
     position: absolute;
     bottom: 0;

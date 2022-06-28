@@ -196,7 +196,7 @@ $colord-text: #000;
 
   //botones
 
-  button{
+  button,a.button{
     border: none;
     border-radius: 4px;
     line-height: 1;
@@ -208,6 +208,10 @@ $colord-text: #000;
     color: var(--accent-color);
     font-family: $commonFontFamily;
     text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
     &:focus,&:hover{
         box-shadow: inset 0 0 0 1.5px var(--accent-color);
     }

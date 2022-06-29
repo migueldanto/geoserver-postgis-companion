@@ -2,3 +2,6 @@
 ng generate component views/login
 ng generate component views/guia-estilo
 ng generate component views/home
+ng generate service services/session
+ng generate interface types/JWTokenPair
+ng generate guard guards/OnlyAutenticatedUsers

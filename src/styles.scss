@@ -234,3 +234,12 @@ $colord-text: #000;
         width: 100%;
     }
   }
+
+  p,label,span{
+    &.error{
+        color: red;
+    }
+    &.success{
+        color: green;
+    }
+  }

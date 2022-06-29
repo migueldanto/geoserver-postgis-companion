@@ -1,6 +1,7 @@
 <div class="header-page">
-  <div class="logo">geoserver-postgis companion</div>
-  <div>hay login?</div>
+  <div class="logo" routerLink="/">geoserver-postgis companion</div>
+  <div>hay login {{sessionExists}}</div>
+  <div><button (click)="logout()">cerrar sesion</button></div>
 </div>
 
 <router-outlet></router-outlet>

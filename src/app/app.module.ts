@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { GuiaEstiloComponent } from './views/guia-estilo/guia-estilo.component';
 import { HomeComponent } from './views/home/home.component';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SessionService } from './services/session.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,11 @@ import { HomeComponent } from './views/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SessionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

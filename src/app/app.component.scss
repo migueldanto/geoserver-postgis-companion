@@ -8,11 +8,15 @@
     padding: 10px 30px;
     display: flex;
     box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+
 
     .logo{
         font-family: 'Sacramento', cursive;
         font-size: 40px;
         font-weight: 400;
+        margin-right: 2em;
     }
 }
 

@@ -9,13 +9,15 @@ import { HomeComponent } from './views/home/home.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SessionService } from './services/session.service';
+import { DropdownComponent } from './components/general/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     GuiaEstiloComponent,
-    HomeComponent
+    HomeComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

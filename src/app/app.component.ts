@@ -13,7 +13,7 @@ export class AppComponent implements OnInit,OnDestroy {
 
   constructor(
     protected sessionService:SessionService,
-    private router: Router
+    private router: Router,  
   ){}
 
   ngOnInit(): void {

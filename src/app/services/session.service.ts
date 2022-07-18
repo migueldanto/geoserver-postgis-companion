@@ -46,6 +46,7 @@ export class SessionService {
         this.sessionExists.next(true);
         this.nextTokenRefresh()
       }, error => {
+        console.log("HEY, aqui se podria revisar, si el refresh token sirve aun, y si sirve traer otro token acces")
         this.logout()
       })
   }

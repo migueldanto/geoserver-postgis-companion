@@ -1,7 +1,13 @@
-<div class="header-page">
+<div class="nav-page">
   <div class="logo" routerLink="/">geoserver-postgis companion</div>
-  <div>hay login {{sessionExists}}</div>
-  <div><button (click)="logout()">cerrar sesion</button></div>
+  
+  <div class="nav">
+    
+    <div class="logout" *ngIf="sessionExists"> <button class="secondary" (click)="logout()">salir</button></div>
+    <div class="login" *ngIf="!sessionExists"> <button class="secondary">Ingresar</button></div>
+    <div class="signup" *ngIf="!sessionExists"> <button class="secondary">Registrarse</button></div>
+  </div>
+  
 </div>
 
 <router-outlet></router-outlet>
